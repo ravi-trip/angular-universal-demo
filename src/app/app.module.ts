@@ -3,12 +3,13 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
+const APP_ID = 'ang-uni-fire';
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule.withServerTransition({appId: APP_ID})
   ],
   providers: [],
   bootstrap: [AppComponent]
